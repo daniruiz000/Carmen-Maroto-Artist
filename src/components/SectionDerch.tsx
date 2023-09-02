@@ -1,6 +1,6 @@
 const SectionDerech = (): React.JSX.Element => {
   return (
-    <div className="SectionDerech">
+    <div className="home__seccionDerch">
       <p>Seccion derecha</p>
     </div>
   );

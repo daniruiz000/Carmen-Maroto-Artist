@@ -1,0 +1,22 @@
+.home{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    &__sections{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px auto;
+        width: 90%;
+        height: 300px;
+    }
+    &__seccionIzq {
+        width: 30%;
+        background-color: blue;
+    }
+    &__seccionDerch {
+        width: 60%;
+        background-color: red;
+    }
+}

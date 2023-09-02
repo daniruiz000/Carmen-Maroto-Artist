@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px 20px;
+    &__title {
+        margin: 10px 20px;
+        font-size: 30px;
+    }
+    &__sections{
+        display: flex;
+        flex-direction: row;
+    }
+    &__section{
+        margin: 10px 10px;
+        font-size: 20px;
+    }
+}
+

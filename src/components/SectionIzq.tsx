@@ -1,6 +1,6 @@
 const SectionIzq = (): React.JSX.Element => {
   return (
-    <div className="SectionIzq">
+    <div className="home__seccionIzq">
       <p>Seccion Izq</p>
     </div>
   );
