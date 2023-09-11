@@ -1,6 +1,5 @@
-import React from "react";
-import tresmanchas from "../assets/img/tresmanchas.png";
 import { NavLink } from "react-router-dom";
+import tresmanchas from "../assets/img/tresmanchas.png";
 
 const Footer = (): React.JSX.Element => {
   return (

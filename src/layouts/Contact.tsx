@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"; // Importa el icono "phone"
 
-const Contact = () => {
+const Contact = (): React.JSX.Element => {
   return (
     <div className="contact">
       <div className="contact__img">

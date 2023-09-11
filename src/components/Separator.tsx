@@ -1,5 +1,3 @@
-import React from "react";
-
 const Separator = (): React.JSX.Element => {
   return (
     <div className="separator">

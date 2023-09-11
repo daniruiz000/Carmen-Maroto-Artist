@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import firma from "../assets/img/carmen-maroto-firma-negro.png";
 import Separator from "./Separator";

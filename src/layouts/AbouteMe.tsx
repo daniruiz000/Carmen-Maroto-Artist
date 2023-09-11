@@ -1,4 +1,4 @@
-const AboutMe = () => {
+const AboutMe = (): React.JSX.Element => {
   return (
     <div>
       <p>AboutMe</p>

@@ -1,4 +1,4 @@
-const Collection = () => {
+const Collection = (): React.JSX.Element => {
   return (
     <div>
       <p>Collection</p>
