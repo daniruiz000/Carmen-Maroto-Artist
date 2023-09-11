@@ -1,22 +1,23 @@
+
 .header{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90%;
     margin: 30px auto;
-    padding: 10px 20px;
-    &__title {
-        margin: 10px 20px;
-        font-size: 30px;
+    &__logo {
+        width: 305px;
+        margin: 20px auto;
     }
     &__sections{
         display: flex;
         flex-direction: row;
+        text-decoration: none;
     }
     &__section{
-        margin: 10px 10px;
+        margin: 10px 10px 0px 10px;
         font-size: 20px;
+        text-decoration: none;
     }
 }
 

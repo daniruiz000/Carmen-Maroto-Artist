@@ -1,24 +1,26 @@
 import React from "react";
-import "../styles/components/Header.scss";
 import { NavLink } from "react-router-dom";
+import firma from "../assets/img/carmen-maroto-firma-negro.png";
+import Separator from "./Separator";
 
 const Header = (): React.JSX.Element => {
   return (
     <div className="header">
-      <NavLink className="header__links-link" to="/">
-        <p className="header__title">Carmen Maroto Sanz</p>
+      <NavLink to="/">
+        <img className="header__logo" src={firma} alt="firma-carmen-maroto-art-img" />
       </NavLink>
       <div className="header__sections">
-        <NavLink className="header__links-link" to="/collection">
+        <NavLink to="/">
           <p className="header__section">Colección</p>
         </NavLink>
-        <NavLink className="header__links-link" to="/aboutme">
+        <NavLink to="/aboutme">
           <p className="header__section">Sobre mí</p>
         </NavLink>
-        <NavLink className="header__links-link" to="/contact">
+        <NavLink to="/contact">
           <p className="header__section">Contacto</p>
         </NavLink>
       </div>
+      <Separator />
     </div>
   );
 };
