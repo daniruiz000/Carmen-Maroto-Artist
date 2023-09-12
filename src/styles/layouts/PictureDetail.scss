@@ -1,0 +1,29 @@
+.pictureDetail{
+    width: 90%;
+    margin: 30px auto;
+    padding: 10px 20px;
+    @include flex-center(column);
+
+    
+    &__img {
+        margin: 40px 20px;
+        width: 250px;
+        height: 250px;
+        @include adaptTo("tabletToEnd"){
+            width: 400px;
+            height: 400px;
+        }
+    }
+    &__title {
+        margin: 10px auto;
+        font-size: 30px;
+    }
+
+    &__text{
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+}
+

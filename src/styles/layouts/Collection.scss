@@ -1,0 +1,20 @@
+.collection{
+    @include flex-center(row);
+    flex-wrap: wrap;
+    margin: 40px auto;
+    @include adaptTo("tabletToEnd"){
+        width: 90%;
+    }
+    
+    &__img {
+        margin: 10px 20px;
+        width: 130px;
+        height: 130px;
+        @include adaptTo("tabletToEnd"){
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+}
+

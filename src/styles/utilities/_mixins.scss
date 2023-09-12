@@ -18,3 +18,14 @@
     }
   }
 }
+
+@mixin flex-center($orientation) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $orientation;
+}
+
+@mixin marginVerticalCenter($marginVertical) {
+  margin: $marginVertical+px auto;
+} 

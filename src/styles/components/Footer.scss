@@ -1,13 +1,10 @@
 .footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 30px auto;
+    @include flex-center(column);
+    @include marginVerticalCenter(30);
     &__img {
      width: 100px;
      height: 100px;
-     margin: 20px auto;
+     @include marginVerticalCenter(20);
     }
 }
 

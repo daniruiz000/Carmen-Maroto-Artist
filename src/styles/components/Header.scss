@@ -1,21 +1,18 @@
 
 .header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 30px auto;
+    @include flex-center(column);
+    @include marginVerticalCenter(20);
+
     &__logo {
         width: 305px;
-        margin: 20px auto;
+        @include marginVerticalCenter(20);
         @include adaptTo("tabletToEnd") {
             width: 422px;
             height: 137px;
         }
     }
     &__sections{
-        display: flex;
-        flex-direction: row;
+        @include flex-center(row);
     }
     &__section{
         margin: 10px 10px 0px 10px;

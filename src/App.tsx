@@ -4,6 +4,7 @@ import Collection from "./layouts/Collection";
 import Contact from "./layouts/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import PictureDetail from "./layouts/PictureDetail";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Collection />} />
+        <Route path="/picture-detail/:id" element={<PictureDetail />} />
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
