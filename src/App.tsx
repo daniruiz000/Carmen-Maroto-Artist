@@ -10,12 +10,14 @@ const App = () => {
   return (
     <HashRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Collection />} />
-        <Route path="/picture-detail/:id" element={<PictureDetail />} />
-        <Route path="/aboutme" element={<AboutMe />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <body>
+        <Routes>
+          <Route path="/" element={<Collection />} />
+          <Route path="/picture-detail/:id" element={<PictureDetail />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </body>
       <Footer />
     </HashRouter>
   );

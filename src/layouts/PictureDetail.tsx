@@ -3,7 +3,7 @@ import { picturesArray } from "../data/data";
 
 const PictureDetail = (): React.JSX.Element => {
   const { id } = useParams();
-  const picture = picturesArray.find((pic) => pic.id.toString() === id);
+  const picture = picturesArray.find((picture) => picture.id.toString() === id);
 
   if (!picture) {
     return <div>Imagen no encontrada</div>;
@@ -17,4 +17,5 @@ const PictureDetail = (): React.JSX.Element => {
     </div>
   );
 };
+
 export default PictureDetail;

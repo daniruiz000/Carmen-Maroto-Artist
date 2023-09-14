@@ -4,23 +4,23 @@ import Separator from "./Separator";
 
 const Header = (): React.JSX.Element => {
   return (
-    <div className="header">
+    <header className="header">
       <NavLink to="/">
         <img className="header__logo" src={firma} alt="firma-carmen-maroto-art-img" />
       </NavLink>
       <div className="header__sections">
         <NavLink to="/">
-          <p className="header__section">Colección</p>
+          <strong className="header__section">Colección</strong>
         </NavLink>
         <NavLink to="/aboutme">
-          <p className="header__section">Sobre mí</p>
+          <strong className="header__section">Sobre mí</strong>
         </NavLink>
         <NavLink to="/contact">
-          <p className="header__section">Contacto</p>
+          <strong className="header__section">Contacto</strong>
         </NavLink>
       </div>
       <Separator />
-    </div>
+    </header>
   );
 };
 

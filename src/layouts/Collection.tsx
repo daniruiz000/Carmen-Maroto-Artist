@@ -1,27 +1,13 @@
-import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { picturesArray } from "../data/data";
 
 const Collection = (): React.JSX.Element => {
-  const navigate = useNavigate();
-
-  const handleFunction = (id: number) => {
-    if (id !== undefined) {
-      navigate(`/picture-detail/${id.toString()}`);
-    }
-  };
-
   return (
     <div className="collection">
       {picturesArray.map((picture) => (
-        <img
-          onClick={() => {
-            handleFunction(picture?.id);
-          }}
-          key={picture.id}
-          className="collection__img"
-          src={picture.img}
-          alt={picture.alt}
-        />
+        <NavLink key={picture.id} className="footer" to={`/picture-detail/${picture?.id.toString()}`}>
+          <img className="collection__img" src={picture.img} alt={picture.alt} />
+        </NavLink>
       ))}
     </div>
   );
