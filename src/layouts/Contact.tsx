@@ -11,13 +11,11 @@ const Contact = (): React.JSX.Element => {
         <h1 className="contact__title">Contact</h1>
         <p className="contact__text">Puedes ponerte en contacto a través de los siguientes medios:</p>
         <ul>
-          <li>
-            <FontAwesomeIcon icon={faPhone} />
-            Teléfono:
+          <li className="contact__data">
+            <FontAwesomeIcon icon={faPhone} /> 616667144
           </li>
-          <li>
-            <FontAwesomeIcon icon={faEnvelope} />
-            Correo electrónico
+          <li className="contact__data">
+            <FontAwesomeIcon icon={faEnvelope} /> carmen0maroto@gmail.com
           </li>
         </ul>
       </div>

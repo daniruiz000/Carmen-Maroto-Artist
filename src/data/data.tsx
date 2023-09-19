@@ -12,7 +12,7 @@ import cuadro14 from "../assets/img/cuadros/cuadro14.jpg";
 export interface Picture {
   id: number;
   title: string;
-  img?: string;
+  img: string;
   explain: string;
   alt: string;
 }
