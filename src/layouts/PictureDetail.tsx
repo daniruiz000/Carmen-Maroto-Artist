@@ -17,18 +17,12 @@ const PictureDetail = (): React.JSX.Element => {
   };
 
   const getPreviousPicture = () => {
-    let newId = actualId - 1;
-    if (newId < 0) {
-      newId = picturesArray.length - 1;
-    }
+    const newId = actualId - 1 < 0 ? picturesArray.length - 1 : actualId - 1;
     setActualId(newId);
   };
 
   const getNextPicture = () => {
-    let newId = actualId + 1;
-    if (newId >= picturesArray.length) {
-      newId = 0;
-    }
+    const newId = actualId + 1 >= picturesArray.length ? 0 : actualId + 1;
     setActualId(newId);
   };
 
@@ -47,7 +41,7 @@ const PictureDetail = (): React.JSX.Element => {
           <p className="pictureDetail__text">{picture?.explain}</p>
         </div>
       </div>
-      <ProgressBar getPreviousPicture={getPreviousPicture} getNextPicture={getNextPicture} activeIndex={actualId} />
+      <ProgressBar getPreviousPicture={getPreviousPicture} getNextPicture={getNextPicture} setActualId={setActualId} actualId={actualId} />
     </div>
   );
 };
