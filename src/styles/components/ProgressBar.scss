@@ -1,0 +1,32 @@
+.progress-bar {
+  @include flex-center(row);
+    @include marginVerticalCenter(20);
+    &__container{
+        display: flex;
+        align-items: center;
+        width: 95%;
+    }
+    
+    &__circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: black;
+        margin-left: 5px;
+      }
+      &__icon {
+        font-size: 20px;
+        margin: 10px;
+        @include adaptTo("tabletToEnd"){
+            font-size: 30px;
+        }
+      } 
+  }
+  
+  
+  
+  .active-circle {
+    background-color: white;
+    border: 1px solid black;
+  }
+  

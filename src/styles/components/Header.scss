@@ -4,9 +4,14 @@
     @include marginVerticalCenter(20);
 
     &__logo {
-        width: 305px;
         @include marginVerticalCenter(20);
+        @include flex-center(column);
 
+    }
+
+    &__img {
+        width: 70%;
+        @include marginVerticalCenter(20);
         @include adaptTo("tabletToEnd") {
             width: 422px;
             height: 137px;

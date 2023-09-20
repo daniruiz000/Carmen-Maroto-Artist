@@ -5,8 +5,8 @@ import Separator from "./Separator";
 const Header = (): React.JSX.Element => {
   return (
     <header className="header">
-      <NavLink to="/">
-        <img className="header__logo" src={firma} alt="firma-carmen-maroto-art-img" />
+      <NavLink className="header__logo" to="/">
+        <img className="header__img" src={firma} alt="firma-carmen-maroto-art-img" />
       </NavLink>
       <div className="header__sections">
         <NavLink to="/">
