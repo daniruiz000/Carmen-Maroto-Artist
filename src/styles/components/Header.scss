@@ -1,36 +1,44 @@
+.header {
+  @include flex-center(column);
+  @include marginVerticalCenter(20);
+  background-image: url("../../assets/img/cuadros/cuadro5.jpg");
 
-.header{
-    @include flex-center(column);
+  @include adaptTo("tabletToEnd") {
+    height: 200px;
+  }
+
+  &__title {
+    font-family: "KleeOne", sans-serif;
+    font-size: 35px;
+    margin: 10px auto;
+    color: white;
+    @include adaptTo("tabletToEnd") {
+      font-size: 80px;
+    }
+  }
+
+  &__img {
+    width: 70%;
     @include marginVerticalCenter(20);
-
-    &__logo {
-        @include marginVerticalCenter(20);
-        @include flex-center(column);
-
+    @include adaptTo("tabletToEnd") {
+      width: 422px;
+      height: 137px;
     }
+  }
 
-    &__img {
-        width: 70%;
-        @include marginVerticalCenter(20);
-        @include adaptTo("tabletToEnd") {
-            width: 422px;
-            height: 137px;
-        }
-    }
+  &__sections {
+    @include flex-center(row);
+  }
 
-    &__sections{
-        @include flex-center(row);
-    }
+  &__section {
+    margin: 10px 10px 0px 10px;
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
 
-    &__section{
-        margin: 10px 10px 0px 10px;
-        font-size: 20px;
-        font-weight:300;
-        
-        @include adaptTo("tabletToEnd") {   
-            font-size: 28px;
-            margin: 10px 20px 0px 20px;
-        }
+    @include adaptTo("tabletToEnd") {
+      font-size: 35px;
+      margin: 10px 20px 0px 20px;
     }
+  }
 }
-

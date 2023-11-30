@@ -6,7 +6,7 @@ const Collection = (): React.JSX.Element => {
     <div className="collection">
       {picturesArray.map((picture) => (
         <NavLink key={picture.id} to={`/picture-detail/${picture.id}`}>
-          <img className="collection__img" src={picture.img} alt={picture.alt} />
+          <img className="collection__img" src={picture.img[0]} alt={picture.alt} />
         </NavLink>
       ))}
     </div>

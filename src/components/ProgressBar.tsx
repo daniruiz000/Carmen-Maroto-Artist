@@ -4,13 +4,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 interface ProgressBarProps {
+  actualImg: number;
   actualId: number;
   setActualId: Dispatch<SetStateAction<number>>;
+  setActualImg: Dispatch<SetStateAction<number>>;
   getPreviousPicture: () => void;
   getNextPicture: () => void;
 }
 
-const ProgressBar: React.FC<ProgressBarProps> = ({ actualId, getPreviousPicture, getNextPicture, setActualId }) => {
+const ProgressBar: React.FC<ProgressBarProps> = ({ actualId, setActualImg, getPreviousPicture, getNextPicture, setActualId }) => {
   const handlePreviousClick = () => {
     getPreviousPicture();
   };
@@ -21,6 +23,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ actualId, getPreviousPicture,
 
   const handleCircleClick = (index: number) => {
     setActualId(index);
+    setActualImg(0);
   };
 
   return (
